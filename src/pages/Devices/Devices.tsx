@@ -116,7 +116,7 @@ const Devices: React.FC = () => {
             <Table>
               <StyledTableHead>
                 <TableRow>
-                  <TableCell>#</TableCell> {/* Añadido */}
+                  <TableCell>#</TableCell>
                   <TableCell>ID</TableCell>
                   <TableCell>Name</TableCell>
                   <TableCell>Mobile Number</TableCell>
@@ -126,7 +126,7 @@ const Devices: React.FC = () => {
                   <TableCell>Actions</TableCell>
                 </TableRow>
               </StyledTableHead>
-              <StyledTableRow /> {/* Línea de separación negra */}
+              <StyledTableRow />
               <TableBody>
                 {data?.devices
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
