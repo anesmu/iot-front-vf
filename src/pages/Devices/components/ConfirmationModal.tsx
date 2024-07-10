@@ -3,7 +3,7 @@ import { Modal, Box, Typography } from '@mui/material';
 import {
   PrimaryButton,
   SecondaryButton,
-} from '../../components/common/Button.styles';
+} from '../../../components/common/Button.styles';
 
 interface ConfirmationModalProps {
   isOpen: boolean;

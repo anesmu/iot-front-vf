@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useMutation } from '@apollo/client';
 import { Modal, Box, TextField, Typography } from '@mui/material';
-import { Device } from '../../types/device';
-import { GET_DEVICES } from '../../graphql/queries/getDevice';
-import { UPDATE_DEVICE } from '../../graphql/mutations/updateDevice';
-import { ADD_DEVICE } from '../../graphql/mutations/addDevice';
+import { Device } from '../../../types/device';
+import { GET_DEVICES } from '../../../graphql/queries/getDevice';
+import { UPDATE_DEVICE } from '../../../graphql/mutations/updateDevice';
+import { ADD_DEVICE } from '../../../graphql/mutations/addDevice';
 import {
   PrimaryButton,
   SecondaryButton,
-} from '../../components/common/Button.styles';
+} from '../../../components/common/Button.styles';
 
 interface DeviceModalProps {
   isOpen: boolean;

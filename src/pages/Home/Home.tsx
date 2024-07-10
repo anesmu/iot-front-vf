@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_DEVICES } from '../../graphql/queries/getDevice';
-import Map from '../../components/Map';
+import Map from './components/Map';
 import { Device } from '../../types/device';
 import {
   ContentContainer,

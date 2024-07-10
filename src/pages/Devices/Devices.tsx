@@ -27,8 +27,8 @@ import {
   TitleContainer,
 } from './Device.styles';
 import { PrimaryButton } from '../../components/common/Button.styles';
-import DeviceModal from './DeviceModal';
-import ConfirmationModal from './ConfirmationModal';
+import DeviceModal from './components/DeviceModal';
+import ConfirmationModal from './components/ConfirmationModal';
 
 const StyledTableHead = styled(TableHead)`
   background-color: #f2f2f2;
