@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink as RouterNavLink } from 'react-router-dom';
 
 export const HeaderContainer = styled.header`
   width: 100%;
@@ -34,11 +34,17 @@ export const Navigation = styled.nav`
   flex-grow: 1;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(RouterNavLink)`
   margin: 0 15px;
   text-decoration: none;
   color: black;
   font-size: 16px;
+
+  &.active {
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid red;
+  }
 `;
 
 export const UserIcon = styled.span`

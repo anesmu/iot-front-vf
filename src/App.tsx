@@ -1,20 +1,36 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Devices from './components/Devices';
-import DeviceDetail from './components/DeviceDetail';
-import Header from './components/common/Header/Header';
+import Home from './pages/Home/Home';
+import Devices from './pages/Devices/Devices';
+import Header from './components/layout/Header/Header';
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
+const ContentContainer = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+`;
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/devices" element={<Devices />} />
-        <Route path="/devices/:id" element={<DeviceDetail />} />
-      </Routes>
-    </Router>
+    <AppContainer>
+      <Router>
+        <Header />
+        <ContentContainer>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/devices" element={<Devices />} />
+          </Routes>
+        </ContentContainer>
+      </Router>
+    </AppContainer>
   );
 };
 
